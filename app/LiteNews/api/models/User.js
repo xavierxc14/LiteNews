@@ -52,10 +52,10 @@ module.exports = {
             via: 'userFeatured',
             dominant: true
         },
-        // TODO: poner la foto como URL o que suba (?)
-        //profilePhoto: {
-        //
-        //}
+        profilePhoto: {
+            type: 'string',
+            defaultsTo: 'http://socooking.com/wp-content/uploads/2015/12/asian-quinoa-salad-144998514784gkn-250x250.png'
+        }
     }
 };
 

@@ -1,0 +1,54 @@
+body {
+    background-color: #F3F3F3;
+}
+
+nav.menu {
+
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar {
+    width: 90%;
+    height: 90px;
+
+    margin: 4px auto;
+    background: white;
+    box-shadow: 2px 2px 2px #777;
+}
+
+.collapse.navbar-collapse {
+    height: 90px !important;
+}
+
+.navbar ul {
+    height: 90px !important;
+}
+
+.navbar ul li {
+    height: 90px;
+    text-transform: uppercase;
+    color: #ACA69B;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    height: 90px;
+    line-height: 4;
+}
+
+.navbar ul.dropdown-menu {
+    height: auto !important;
+}
+
+.navbar ul.dropdown-menu li {
+    height: 45px;
+}
+
+.navbar ul.dropdown-menu li a {
+    height: 45px;
+    line-height: 2;
+}

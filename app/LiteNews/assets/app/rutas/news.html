@@ -1,0 +1,13 @@
+<div id="wrapper">
+    <div id="columns">
+        <div class="pin" ng-repeat="news in newsCtrl.news">
+            <img class="img-thumbnail" ng-src="{{news.authorsPhoto}}"/>
+            <h5>{{news.author}}</h5>
+            <p>{{news.date | date:'dd MMM yyyy - HH:mm'}}</p>
+            <hr/>
+            <p>
+                {{news.title}}
+            </p>
+        </div>
+    </div>
+</div>

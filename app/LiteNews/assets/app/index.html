@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Hojas de estilo -->
+    <link href="librerias/css/bootstrap.min.css" rel="stylesheet">
+    <link href="librerias/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="librerias/css/animate.css" rel="stylesheet">
+    <link href="librerias/css/angular-toastr.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/cards.css" rel="stylesheet">
+    <title>LiteNews</title>
+</head>
+<body ng-app="lite-news">
+
+<div ui-view="menu">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div ui-view="content"></div>
+    </div>
+</div>
+
+
+<!-- Dependencias JS -->
+<script src="librerias/js/angular.min.js"></script>
+<script src="librerias/js/angular-animate.min.js"></script>
+<script src="librerias/js/angular-resource.min.js"></script>
+<script src="librerias/js/angular-ui-router.min.js"></script>
+<script src="librerias/js/jquery-1.12.0.min.js"></script>
+<script src="librerias/js/bootstrap.min.js"></script>
+<script src="librerias/js/angular-toastr.tpls.min.js"></script>
+<script src="librerias/js/sails.io.js"></script>
+
+<!-- App -->
+<script src="app.js"></script>
+<script src="controladores/MenuController.js"></script>
+<script src="controladores/NewsController.js"></script>
+<script src="controladores/LoginController.js"></script>
+
+</body>
+</html>
