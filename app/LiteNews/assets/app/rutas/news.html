@@ -1,13 +1,25 @@
-<div id="wrapper">
-    <div id="columns">
-        <div class="pin" ng-repeat="news in newsCtrl.news">
-            <img class="img-thumbnail" ng-src="{{news.authorsPhoto}}"/>
-            <h5>{{news.author}}</h5>
-            <p>{{news.date | date:'dd MMM yyyy - HH:mm'}}</p>
-            <hr/>
-            <p>
-                {{news.title}}
-            </p>
+<div class="col-xs-12">
+    <div id="wrapper">
+        <div id="columns">
+            <div class="pin" ng-repeat="news in newsCtrl.news">
+                <div>
+                    <div style="float: left; width: 15%">
+                        <img class="img-circle" ng-src="{{news.authorsPhoto}}"/>
+                    </div>
+                    <div style="float: right; width: 80%; position: relative">
+                        <h5><b>{{news.author}}</b></h5>
+                        <p>{{news.date | date:'dd MMM yyyy - HH:mm'}}</p>
+                        <i class="glyphicon glyphicon-star"
+                           style="position: absolute;top: 0;right: 0; color: #F5A623;"></i>
+                    </div>
+                </div>
+                <br>
+                <hr/>
+                <p style="font-size: 15px">
+                    {{news.title}}
+                </p>
+                <span style="color: #DCDEE2;margin-top: 12px;margin-bottom: 6px;display: block;font-size: 12px;">via {{news.via}}</span>
+            </div>
         </div>
     </div>
 </div>

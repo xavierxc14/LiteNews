@@ -1,58 +1,58 @@
 (function (global, angular) {
-  'use strict';
+    'use strict';
 
-  var lab = {
-      MODULE: 'lite-news'
-    },
-    dependencies = [
-      'ui.router',
-      'ngResource'
-    ];
-
-  function ApplicationConfig($stateProvider, $urlRouterProvider) {
-    var login = {
-      name: 'login',
-      url: '/login',
-      views: {
-        menu: {
-          //templateUrl: 'rutas/menu.html'
+    var lab = {
+            MODULE: 'lite-news'
         },
-        content: {
-          templateUrl: 'rutas/login.html',
-          controller: 'LoginController',
-          controllerAs: 'loginCtrl'
-        }
-      }
-    }, news = {
-      name: 'news',
-      url: '/news',
-      views: {
-        menu: {
-          templateUrl: 'rutas/menu.html',
-          controller: 'MenuController',
-          controllerAs: 'menuCtrl'
-        },
-        content: {
-          templateUrl: 'rutas/news.html',
-          controller: 'NewsController',
-          controllerAs: 'newsCtrl'
-        }
-      }
-    };
+        dependencies = [
+            'ui.router',
+            'ngResource'
+        ];
 
-    $stateProvider
-      .state(login)
-      .state(news);
+    function ApplicationConfig($stateProvider, $urlRouterProvider) {
+        var login = {
+            name: 'login',
+            url: '/login',
+            views: {
+                menu: {
+                    //templateUrl: 'rutas/menu.html'
+                },
+                content: {
+                    templateUrl: 'rutas/login.html',
+                    controller: 'LoginController',
+                    controllerAs: 'loginCtrl'
+                }
+            }
+        }, news = {
+            name: 'news',
+            url: '/news',
+            views: {
+                menu: {
+                    templateUrl: 'rutas/menu.html',
+                    controller: 'MenuController',
+                    controllerAs: 'menuCtrl'
+                },
+                content: {
+                    templateUrl: 'rutas/news.html',
+                    controller: 'NewsController',
+                    controllerAs: 'newsCtrl'
+                }
+            }
+        };
 
-    $urlRouterProvider.otherwise('/login');
+        $stateProvider
+            .state(login)
+            .state(news);
 
-  }
+        $urlRouterProvider.otherwise('/login');
 
-  ApplicationConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+    }
 
-  angular.module(lab.MODULE, dependencies)
-    .config(ApplicationConfig);
+    ApplicationConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-  global.lab = lab;
+    angular.module(lab.MODULE, dependencies)
+        .config(ApplicationConfig);
+
+    global.lab = lab;
 
 }(window, window.angular));

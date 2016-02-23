@@ -1,26 +1,27 @@
-<div class="container row">
-  <form class="form form-group center-block" ng-submit="loginCtrl.login()">
-    <div class="header col-xs-12">
-      <h2 class="title" data-sb="fadeInUp">Login</h2>
-    </div>
-    <div class="content controls col-xs-12">
-      <div class="form-group col-xs-12 p0 m0">
-        <label for="usuario">Usuario</label>
-        <input type="usuario" class="form-control" id="usuario" placeholder="Usuario" required
-               ng-model="loginCtrl.username"/>
-      </div>
-      <div class="form-group col-xs-12 p0 pt12 m0">
-        <label for="password">Contrseña</label>
-        <input type="password" class="form-control" id="password" placeholder="Contraseña" required
-               ng-model="loginCtrl.password">
-      </div>
-    </div>
-    <div class="footer col-xs-12 pt12">
-      <div class="group">
-        <button class="btn btn-primary col-xs-5" type="submit"">Login</button>
-        <a class="btn btn-info col-xs-5 col-xs-offset-2" href="#/registro">Register</a>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </form>
+<div class="col-xs-6 col-xs-offset-3 vertical-center">
+    <form class="form form-group center-block" ng-submit="loginCtrl.login()"
+          style="background: white;padding-bottom: 18px;">
+        <div class="header col-xs-12">
+            <h4 style="text-align: center" class="title" data-sb="fadeInUp">Ingreso</h4>
+        </div>
+        <div class="content controls col-xs-12">
+            <div class="form-group col-xs-12 p0 m0">
+                <label for="usuario">Usuario</label>
+                <input type="usuario" class="form-control" id="usuario" placeholder="Usuario" required
+                       ng-model="loginCtrl.username"/>
+            </div>
+            <div class="form-group col-xs-12 p0 pt12 m0">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" required
+                       ng-model="loginCtrl.password">
+            </div>
+        </div>
+        <div class="footer col-xs-12 pt12">
+            <div class="group">
+                <button class="form-control btn btn-primary col-xs-5" type="submit">Login</button>
+                <!--<a class="btn btn-info col-xs-5 col-xs-offset-2" href="#/registro">Register</a>-->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </form>
 </div>

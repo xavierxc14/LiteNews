@@ -16,6 +16,10 @@ module.exports = {
             type: 'string',
             required: true
         },
+        via: {
+            type: 'string',
+            required: true
+        },
         author: {
             type: 'string',
             required: true
